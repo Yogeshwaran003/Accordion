@@ -1,0 +1,42 @@
+.outerbox{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.innerbox{
+    margin-top: 20vh;
+}
+.innerbox h2{
+    padding: 15px;
+}
+.borderofitem{
+    margin: 20px;
+}
+.borderofitem .header{
+    border: 1px solid black;
+    background: dimgray;
+    border-radius: 5px;    
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.borderofitem .body{
+    border: 1px solid black;
+    background: darkgrey;
+    border-radius: 5px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.borderofitem .body p{
+    margin: 15px;
+}
+.borderofitem .header:hover{
+    cursor: pointer;
+    background-color: rgba(105, 105, 105, 0.725);
+}
+.borderofitem.active  .body{
+    max-height: 300px;
+}
